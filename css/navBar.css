@@ -1,0 +1,41 @@
+.nav {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #333333;
+  z-index: 100;
+}
+
+.nav-logo {
+  height: 50px;
+}
+
+.nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: block;
+  padding: 15px 20px;
+}
+
+.nav-item:hover {
+  background-color: #7791ff;
+  transition: background-color 0.5s;
+}
+
+.nav-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #7791ff;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  transition: color 0.3s;
+}
+

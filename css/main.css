@@ -1,0 +1,51 @@
+/* Si ça ne fonctionne pas, mettre à enable ici : chrome://flags/#smooth-scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.header-image {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.image-title {
+  position: absolute;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 60px;
+  font-family: 'Pacifico', cursive;
+  top: 30%;
+  left: 50%;
+  padding: 10px 20px;
+  border-radius: 40px;
+  transform: translate(-50%, -50%);
+}
+
+.footer {
+  background-color: #333333;
+  color: #7791ff;
+  padding: 10px 20px;
+  margin: 0;
+  margin-top: -10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 842px) {
+  .image-title {
+    font-size: 25px;
+    top: 50%;
+  }
+}

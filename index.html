@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rejoignez Benjamin et Floris, créateurs de jeux vidéo indépendants, dans leur voyage passionnant à travers l'univers des jeux vidéo. Découvrez des expériences de jeu uniques et immersives conçues avec dévouement, qualité et originalité.">
+  <meta name="keywords" content="jeux vidéo, jeux indépendants, développeurs de jeux, Benjamin, Floris, expérience de jeu immersive, jeux vidéo uniques, créateurs de jeux vidéo, mondes virtuels">
+  <meta name="author" content="Benjamin & Floris">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Pacifico">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins">
+
+  <title>Gaming Place</title>
+  <link rel="shortcut icon" type="image/x-icon" href="src/logo.png" />
+</head>
+
+<body>
+  <!-- Le Header ! -->
+  <header class="header">
+    <nav class="nav">
+      <img src="src/logo.png" alt="logo" class="nav-logo">
+
+      <button class="burger" aria-label="toggle navigation">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#home" class="nav-link" title="Navigation vers Accueil">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link" title="Navigation vers A Propos">A propos</a>
+        </li>
+        <li class="nav-item">
+          <a href="#games" class="nav-link" title="Navigation vers Nos Jeux">Nos Jeux</a>
+        </li>
+        <li class="nav-item">
+          <a href="#team" class="nav-link" title="Navigation vers Notre Équipe">Notre équipe</a>
+        </li>
+        <li class="nav-item">
+          <a href="#testimonials" class="nav-link" title="Navigation vers Témoignages">Temoignages</a>
+        </li>
+        <li class="nav-item">
+          <a href="#form" class="nav-link" title="Navigation vers Contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Le Background ! -->
+  <section class="image-container" id="home">
+    <h1 class="image-title">Gaming Place</h1>
+
+    <img src="src/background.jpg" alt="Gaming Room" class="header-image">
+  </section>
+
+  <!-- Section About ! -->
+  <section class="about" id="about">
+    <h2 class="about-title">À propos</h2>
+    <div class="about-container">
+      <p class="about-text">
+        Dans le monde en constante évolution des jeux vidéo, nous sommes deux jeunes passionnés, Benjamin & Floris, qui
+        se sont lancés
+        dans la création de leurs propres jeux indépendants. Notre parcours est guidé par une vision audacieuse et notre
+        amour pour les
+        mondes virtuels. Nous avons transformé notre passion en une mission déterminée à offrir aux joueurs une
+        expérience unique et immersive.
+        Chaque ligne de code que nous écrivons, chaque pixel d'art que nous créons et chaque moment de gameplay que nous
+        concevons reflètent notre
+        engagement envers la qualité et l'originalité. Rejoignez-nous pour découvrir notre histoire, nos jeux et notre
+        voyage dans l'univers fascinant des jeux vidéo indépendants.
+      </p>
+
+      <img src="src/about.jpg" alt="Matériel de jeu" class="about-image">
+    </div>
+  </section>
+
+  <!-- Section Games ! -->
+  <section class="games" id="games">
+    <h2 class="games-title">Nos Jeux</h2>
+
+    <div class="games-nav">
+      <button onclick="changeGame(0)">Minecraft</button>
+      <button onclick="changeGame(1)">League of Legends</button>
+      <button onclick="changeGame(2)">Valorant</button>
+      <button onclick="changeGame(3)">Rocket League</button>
+    </div>
+
+    <div class="games-container">
+      <div class="games-image" id="carrousel"></div>
+
+      <div class="games-info">
+        <h2 id="games-name"></h2>
+        <p id="games-summary"></p>
+        <button id="games-price" class="buy-button"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Team ! -->
+  <section class="team" id="team">
+    <h2 class="team-title">Notre équipe</h2>
+    <div class="team-container">
+      <figure class="team-mate" id="Floris">
+        <img src="src/floris.jpg" class="team-image" alt="Photo de Floris">
+        <h3 class="team-name">Floris</h3>
+        <p class="team-description">Testeur de tests</p>
+        <ul class="team-list">
+          <li>
+            <a href="#" title="Floris sur Twitter">
+              <img src="src/twitter.png" alt="Logo Twitter" class="team-list-image">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="Floris sur Facebook">
+              <img src="src/facebook.png" alt="Logo Facebook" class="team-list-image">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="Floris sur Linkedin">
+              <img src="src/linkedin.png" alt="Logo Linkedin" class="team-list-image">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="Floris sur Instagram">
+              <img src="src/instagram.png" alt="Logo Instagram" class="team-list-image">
+            </a>
+          </li>
+        </ul>
+      </figure>
+
+      <figure class="team-mate" id="Benjamin">
+        <img src="src/benjamin.jpg" class="team-image" alt="Avatar de Benjamin">
+        <h3 class="team-name">Benjamin</h3>
+        <p class="team-description">Codeur de code</p>
+        <ul class="team-list">
+          <li>
+            <a href="#" title="Benjamin sur Twitter">
+              <img src="src/twitter.png" alt="Logo Twitter" class="team-list-image">
+            </a>
+          </li>
+          <li> <a href="#" title="Benjamin sur Facebook">
+              <img src="src/facebook.png" alt="Logo Facebook" class="team-list-image"></a>
+          </li>
+          <li> <a href="#" title="Benjamin sur Linkedin">
+              <img src="src/linkedin.png" alt="Logo Linkedin" class="team-list-image"></a>
+          </li>
+          <li> <a href="#" title="Benjamin sur Instagram">
+              <img src="src/instagram.png" alt="Logo Instagram" class="team-list-image"></a>
+          </li>
+        </ul>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Section Testimonials ! -->
+  <section class="testimonials" id="testimonials">
+    <h2 class="testimonial-title">Témoignages</h2>
+    <div class="card-container">
+      <figure class="card">
+        <img class="round-img" src="src/person1.jpg" alt="Client 1">
+
+        <h3>Théo</h3>
+        <p>Mon expérience avec Gaming Place a été rien de moins que fantastique.</p>
+      </figure>
+
+      <figure class="card">
+        <img class="round-img" src="src/person2.jpg" alt="Client 2">
+
+        <h3>Camille</h3>
+        <p>J'adore la diversité et la créativité des jeux disponibles sur Gaming Place !</p>
+      </figure>
+
+      <figure class="card">
+        <img class="round-img" src="src/person3.jpg" alt="Client 1">
+
+        <h3>Harold</h3>
+        <p> Gaming Place a enrichi mon répertoire avec des titres indépendants innovants et fascinants que je n'aurais
+          probablement jamais découverts autrement.</p>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Section Form ! -->
+  <section class="form">
+    <h2 class="form-title" id="formTitle">Contactez-Nous!</h2>
+
+    <form id="form" aria-labelledby="formTitle" novalidate>
+      <div class="identity">
+        <label for="name"></label>
+        <input type="text" name="name" id="name" placeholder="Nom" required>
+        <span id="name-error" class="error"></span>
+
+        <label for="firstName"></label>
+        <input type="text" name="firstName" id="firstName" placeholder="Prénom" required>
+        <span id="firstName-error" class="error"></span>
+      </div>
+
+      <div class="contact-details">
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="Adresse e-mail" required>
+        <span id="email-error" class="error"></span>
+
+        <label for="phone"></label>
+        <input type="text" name="phone" id="phone" placeholder="Téléphone" required>
+        <span id="phone-error" class="error"></span>
+      </div>
+
+      <textarea rows="10" cols="40" id="textarea" maxlength="500"></textarea>
+      
+      <script>
+        // Script pour mettre un retour a la ligne dans le placeholder.
+        var textarea = document.getElementById("textarea");
+        textarea.placeholder = "Laissez-nous un message!\n(limite de 500 caractères)";
+      </script>
+      
+      <button type="submit" id="send">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Le Footer ! -->
+  <footer class="footer">
+    <p>&copy; 2023 Gaming Place. Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/navBarScroll.js"></script>
+  <script src="js/burger.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/games.js"></script>
+</body>
+
+</html>
